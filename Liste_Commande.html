@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>12 x 36</title>
+<title>Page de navigation</title>
 <link rel="stylesheet" href="Style.css">
 </head>
 <body>
@@ -69,6 +69,29 @@
         </nav>
   
         </header>
+
+<script>
+    //va enregistrer les donnees de la page 12x12.
+    function loadData() {
+            const data = JSON.parse(localStorage.getItem('commandeData'));
+            const list = document.getElementById('commandeList');
+            list.innerHTML = '';
+
+            if (data && data.length > 0) {
+                data.forEach(item => {
+                    const listItem = document.createElement('li');
+                    listItem.textContent = item;
+                    list.appendChild(listItem);
+                });
+            } else {
+                list.textContent = 'Aucune commande sélectionnée';
+            }
+        }
+
+        window.onload = loadData;
+</script>
+
+<ul id="commandeList"></ul>
 
 <footer>
     <p>&copy; 2024 Amelie Fletcher pour Grif & Graf. Tous droits réservés.</p>
