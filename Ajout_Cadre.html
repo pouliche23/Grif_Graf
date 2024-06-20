@@ -86,116 +86,56 @@
 
       </header>
 
-      <div class="grid-container">
-        <div class="item">
-            <button> <a href="12x12.html">12 x 12</a></button>
-        </div>
+        <!--Changer alerte pour popup erreur.-->
     
-        <div class="item">
-            <button> <a href="12x16.html">12 x 16</a></button>
-        </div>
-    
-        <div class="item">
-            <button> <a href="12x18.html">12 x 18</a></button>
-        </div>
-    
-        <div class="item">
-            <button> <a href="12x24.html">12 x 24</a></button>
-        </div>
-    
-        <div class="item">
-            <button> <a href="12x36.html">12 x 36</a></button>
-        </div>
-    
-        <div class="item">
-            <button> <a href="19x39.html">19 x 39</a></button>
-        </div>
-    
-        <div class="item">
-            <button> <a href="20x20.html">20 x 20</a></button>
-        </div>
-    
-        <div class="item">
-            <button> <a href="20x40.html">20 x 40</a></button>
-        </div>
-    
-        <div class="item">
-            <button> <a href="20x60.html">20 x 60</a></button>
-        </div>
-    
-        <div class="item">
-            <button> <a href="24x24.html">24 x 24</a></button>
-        </div>
-    
-        <div class="item">
-            <button> <a href="24x36Populaire.html">24 x 36 Populaire</a></button>
-        </div>
-    
-        <div class="item">
-            <button> <a href="24x36HautDeGamme.html">24 x 36 Haut De Gamme</a></button>
-        </div>
-    
-        <div class="item">
-            <button> <a href="24x48.html">24 x 48</a></button>
-        </div>
-    
-        <div class="item">
-            <button> <a href="27x27.html">27 x 27</a></button>
-        </div>
-    
-        <div class="item">
-            <button> <a href="27x54.html">27 x 54</a></button>
-        </div>
-    
-        <div class="item">
-            <button> <a href="28x42.html">28 x 42</a></button>
-        </div>
-    
-        <div class="item">
-            <button> <a href="30x30.html">30 x 30</a></button>
-        </div>
-    
-        <div class="item">
-            <button> <a href="30x40.html">30 x 40</a></button>
-        </div>
-    
-        <div class="item">
-            <button> <a href="30x60.html">30 x 60</a></button>
-        </div>
-    
-        <div class="item">
-            <button> <a href="32x48.html">32 x 48</a></button>
-        </div>
-    
-        <div class="item">
-            <button> <a href="35x35.html">35 x 35</a></button>
-        </div>
-    
-        <div class="item">
-            <button> <a href="36x48.html">36 x 48</a></button>
-        </div>
-    
-        <div class="item">
-            <button> <a href="36x54.html">36 x 54</a></button>
-        </div>
-    
-        <div class="item">
-            <button> <a href="40x40.html">40 x 40</a></button>
-        </div>
-    
-        <div class="item">
-            <button> <a href="40x54.html">40 x 54</a></button>
-        </div>
-    
-        <div class="item">
-            <button> <a href="40x60.html">40 x 60</a></button>
-        </div>
-    
-        <div class="item">
-            <button> <a href="SamToft.html">Sam Toft</a></button>
-        </div>
+        <script>
 
-    </div>
+            function Ajout_Cadre(event){
+                event.preventDefault();
+    
+                var NomCadre = document.getElementById("NomCadre").value;
+                var Grandeur = document.getElementById("Grandeur").value;
+                var Categorie = document.getElementById("Categorie").value;
+                var Quantite = document.getElementById("Quantite").value;
+                var LienWeb = document.getElementById("LienWeb").value;
+                var Image = document.getElementById("Image").value;
+
+                if (NomCadre === '' || Grandeur === '' || Categorie === '' || Quantite === '' || LienWeb === '' || Image=== '') {
+                alert("Veuillez remplir tous les champs.");
+                return;
+              }
+
+             // Si pas d'erreurs, vous pouvez continuer avec le traitement des données ici.
+             alert("Nouveau cadre enregistre");
+
+            }
+
+        </script>
+        
+        <form id="Ajout_Produit">
+    
+            <label for="NomCadre">Nom Du Cadre:</label><br>
+            <input type="text" id="NomCadre" name="NomCadre"><br>
+
+            <label for="Grandeur">Grandeur:</label><br>
+            <input type="text" id="Grandeur" name="Grandeur"><br>
+
+            <label for="CategorieCadre">Categorie:</label><br>
+            <input type="text" id="CategorieCadre" name="CategorieCadre"><br>
+    
+            <label for="Quantite">Quantite:</label><br>
+            <input type="number" id="Quantite" name="Quantite"><br>
+
+    <!--
+    <label for="LienWeb">Lien Web:</label><br>
+    <input type="text" id="LienWeb" name="LienWeb"><br>
+    -->    <label for="Image">Televersez Votre Image:</label><br>
+           <input type="file" id="Image" name="Image"><br>
+    <!--Bouton sauvegarde et ajout.-->
+           <input type="submit" value="Envoyer">
+        </form>
+
+        
 
     <footer>
       <p>&copy; 2024 Amelie Fletcher pour Grif & Graf. Tous droits réservés.</p>

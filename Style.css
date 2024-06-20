@@ -108,3 +108,11 @@ button{
     border: #ff4d6d;
 }
 
+form{
+    text-align: center;
+}
+
+label{
+    color: white;
+}
+
