@@ -59,7 +59,7 @@
   
                 <li>
                   <div>
-                    <input type="text" placeholder="Rechercher...">
+                    <input type="text" id="searchBar" onkeyup="searchItems()" placeholder="Rechercher">
                     <button>Rechercher</button>
                   </div>
                 </li>
@@ -72,452 +72,671 @@
 
 <div class="grid-container">
 
-    <div class="item">
-        <img src="../12X12/4GNZ-AK43.png" alt="Betty Boop">
+    <div class="item" id="Betty Boop">
+        <img src="../Images_12X12/4GNZ-AK43.png" alt="Betty Boop">
         <br>
-        Murciano - Betty Boop
+        Betty Boop
         <br>
-        <button class="plus" onclick="incrementerNombre(this)">+</button> <span class="nombre">0</span><button class="moins" onclick="decrementerNombre(this)">-</button>
-        <br>
-        <label>
-            <input type="checkbox" name="Commande" value="Betty_Boop">
-            Commander
-        </label>
-    </div>
-    <div class="item">
-        <img src="../12X12/SK6W-JQBV.png" alt="Deep Sea">
-        <br>
-        Anne Tavoletti - Deep Sea
-        <br>
-        <button class="plus" onclick="incrementerNombre(this)">+</button><span class="nombre">0</span><button class="moins" onclick="decrementerNombre(this)">-</button>
+        <button class="moins" onclick="decrementerNombre(this)">-</button><span class="nombre">0</span><button class="plus" onclick="incrementerNombre(this)">+</button>
         <br>
         <label>
-            <input type="checkbox" name="Commande" value="Deep_Sea">
+            <input type="checkbox" name="Commande" value="Betty Boop">
             Commander
         </label>
+        <br>
+        <form action="https://grifgraf.ca/betty-boop.html">
+            <input type="submit" value="Lien Web">
+        </form>
     </div>
-    <div class="item">
-        <img src="../12X12/RRTI-080R.png" alt="Black Rocks">
+
+    <div class="item" id="12 Pole">
+        <img src="../Images_12X12/NPMV-PLG0.png" alt="12 Pole">
+        <br>
+        12 Pole
+        <br>
+        <button class="moins" onclick="decrementerNombre(this)">-</button><span class="nombre">0</span><button class="plus" onclick="incrementerNombre(this)">+</button>
+        <br>
+        <label>
+            <input type="checkbox" name="Commande" value="12 Pole">
+            Commander
+        </label>
+        <br>
+        <form action="https://grifgraf.ca/n-a-4395.html">
+            <input type="submit" value="Lien Web">
+        </form>
+    </div>
+
+    <div class="item" id="Africa">
+        <img src="../Images_12X12/IXUY-HKMR.png" alt="Africa">
+        <br>
+        Africa
+        <br>
+        <button class="moins" onclick="decrementerNombre(this)">-</button><span class="nombre">0</span><button class="plus" onclick="incrementerNombre(this)">+</button>
+        <br>
+        <label>
+            <input type="checkbox" name="Commande" value="Africa">
+            Commander
+        </label>
+        <br>
+        <form action="https://grifgraf.ca/n-a-4462.html">
+            <input type="submit" value="Lien Web">
+        </form>
+    </div>
+
+    <div class="item" id="Hers Crop">
+        <img src="../Images_12X12/FOQY-9T75.png" alt="Hers Crop">
+        <br>
+        Hers Crop
+        <br>
+        <button class="moins" onclick="decrementerNombre(this)">-</button><span class="nombre">0</span><button class="plus" onclick="incrementerNombre(this)">+</button>
+        <br>
+        <label>
+            <input type="checkbox" name="Commande" value="Hers Crop">
+            Commander
+        </label>
+        <br>
+        <form action="https://grifgraf.ca/albena-hristova-hers-crop.html">
+            <input type="submit" value="Lien Web">
+        </form>
+    </div>
+
+    <div class="item" id="His Crop">
+        <img src="../Images_12X12/FA0Z-LM08.png" alt="His Crop">
+        <br>
+        His Crop
+        <br>
+        <button class="moins" onclick="decrementerNombre(this)">-</button><span class="nombre">0</span><button class="plus" onclick="incrementerNombre(this)">+</button>
+        <br>
+        <label>
+            <input type="checkbox" name="Commande" value="His Crop">
+            Commander
+        </label>
+        <br>
+        <form action="https://grifgraf.ca/albena-hristova-his-crop.html">
+            <input type="submit" value="Lien Web">
+        </form>
+    </div>
+
+    <div class="item" id="All You Need Is Love">
+        <img src="../Images_12X12/L6I4-YWSH.png" alt="All You Need Is Love">
+        <br>
+        All You Need Is Love
+        <br>
+        <button class="moins" onclick="decrementerNombre(this)">-</button><span class="nombre">0</span><button class="plus" onclick="incrementerNombre(this)">+</button>
+        <br>
+        <label>
+            <input type="checkbox" name="Commande" value="All You Need Is Love">
+            Commander
+        </label>
+        <br>
+        <form action="https://grifgraf.ca/all-you-need-is-love.html">
+            <input type="submit" value="Lien Web">
+        </form>
+    </div>
+
+    <div class="item" id="Love">
+        <img src="../Images_12X12/R5XD-U0XK.png" alt="Love">
+        <br>
+        Love
+        <br>
+        <button class="moins" onclick="decrementerNombre(this)">-</button><span class="nombre">0</span><button class="plus" onclick="incrementerNombre(this)">+</button>
+        <br>
+        <label>
+            <input type="checkbox" name="Commande" value="Love">
+            Commander
+        </label>
+        <br>
+        <form action="https://grifgraf.ca/amanda-murray-love.html">
+            <input type="submit" value="Lien Web">
+        </form>
+    </div>
+
+    <div class="item" id="Venice I">
+        <img src="../Images_12X12/R5XD-U0XK.png" alt="Venice I">
+        <br>
+        Venice I
+        <br>
+        <button class="moins" onclick="decrementerNombre(this)">-</button><span class="nombre">0</span><button class="plus" onclick="incrementerNombre(this)">+</button>
+        <br>
+        <label>
+            <input type="checkbox" name="Commande" value="Venice I">
+            Commander
+        </label>
+        <br>
+        <form action="https://grifgraf.ca/amanda-murray-love.html">
+            <input type="submit" value="Lien Web">
+        </form>
+    </div>
+
+    <div class="item" id="Venice II">
+        <img src="../Images_12X12/LVNQ-WI3Z.png" alt="Venice II">
+        <br>
+        Venice II
+        <br>
+        <button class="moins" onclick="decrementerNombre(this)">-</button><span class="nombre">0</span><button class="plus" onclick="incrementerNombre(this)">+</button>
+        <br>
+        <label>
+            <input type="checkbox" name="Commande" value="Venice II">
+            Commander
+        </label>
+        <br>
+        <form action="https://grifgraf.ca/anne-farrall-doyle-venice-ii.html">
+            <input type="submit" value="Lien Web">
+        </form>
+    </div>
+
+    <div class="item" id="Venice III">
+        <img src="../Images_12X12/GLXP-H77L.png" alt="Venice III">
+        <br>
+        Venice III
+        <br>
+        <button class="moins" onclick="decrementerNombre(this)">-</button><span class="nombre">0</span><button class="plus" onclick="incrementerNombre(this)">+</button>
+        <br>
+        <label>
+            <input type="checkbox" name="Commande" value="Venice III">
+            Commander
+        </label>
+        <br>
+        <form action="https://grifgraf.ca/anne-farrall-doyle-venice-iii.html">
+            <input type="submit" value="Lien Web">
+        </form>
+    </div>
+
+    <div class="item" id="Venice IV">
+        <img src="../Images_12X12/BBLW-XNUX.png" alt="Venice IV">
+        <br>
+        Venice IV
+        <br>
+        <button class="moins" onclick="decrementerNombre(this)">-</button><span class="nombre">0</span><button class="plus" onclick="incrementerNombre(this)">+</button>
+        <br>
+        <label>
+            <input type="checkbox" name="Commande" value="Venice IV">
+            Commander
+        </label>
+        <br>
+        <form action="https://grifgraf.ca/anne-farrall-doyle-venice-iv.html">
+            <input type="submit" value="Lien Web">
+        </form>
+    </div>
+
+    <div class="item" id="Deep Sea IX">
+        <img src="../Images_12X12/VFWC-JTS3.png" alt="Deep Sea IX">
+        <br>
+        Deep Sea IX
+        <br>
+        <button class="moins" onclick="decrementerNombre(this)">-</button><span class="nombre">0</span><button class="plus" onclick="incrementerNombre(this)">+</button>
+        <br>
+        <label>
+            <input type="checkbox" name="Commande" value="Deep Sea IX">
+            Commander
+        </label>
+        <br>
+        <form action="https://grifgraf.ca/anne-tavoletti-deep-sea-ix.html">
+            <input type="submit" value="Lien Web">
+        </form>
+    </div>
+
+    <div class="item" id="Deep Sea VIII">
+        <img src="../Images_12X12/SK6W-JQBV.png" alt="Deep Sea VIII">
+        <br>
+        Deep Sea VIII
+        <br>
+        <button class="moins" onclick="decrementerNombre(this)">-</button><span class="nombre">0</span><button class="plus" onclick="incrementerNombre(this)">+</button>
+        <br>
+        <label>
+            <input type="checkbox" name="Commande" value="Deep Sea VIII">
+            Commander
+        </label>
+        <br>
+        <form action="https://grifgraf.ca/anne-tavoletti-deep-sea-viii.html">
+            <input type="submit" value="Lien Web">
+        </form>
+    </div>
+
+    <div class="item" id="Deep Sea X">
+        <img src="../Images_12X12/ZZ58-VWCX.png" alt="Deep Sea X">
+        <br>
+        Deep Sea X
+        <br>
+        <button class="moins" onclick="decrementerNombre(this)">-</button><span class="nombre">0</span><button class="plus" onclick="incrementerNombre(this)">+</button>
+        <br>
+        <label>
+            <input type="checkbox" name="Commande" value="Deep Sea X">
+            Commander
+        </label>
+        <br>
+        <form action="https://grifgraf.ca/anne-tavoletti-deep-sea-x.html">
+            <input type="submit" value="Lien Web">
+        </form>
+    </div>
+
+    <div class="item" id="Deep Sea XI">
+        <img src="../Images_12X12/YE6R-KESW.png" alt="Deep Sea XI">
+        <br>
+        Deep Sea XI
+        <br>
+        <button class="moins" onclick="decrementerNombre(this)">-</button><span class="nombre">0</span><button class="plus" onclick="incrementerNombre(this)">+</button>
+        <br>
+        <label>
+            <input type="checkbox" name="Commande" value="Deep Sea XI">
+            Commander
+        </label>
+        <br>
+        <form action="https://grifgraf.ca/anne-tavoletti-deep-sea-xi.html">
+            <input type="submit" value="Lien Web">
+        </form>
+    </div>
+
+    <div class="item" id="Asperges">
+        <img src="../Images_12X12/P6M5-QFWE.png" alt="Asperges">
+        <br>
+        Asperges
+        <br>
+        <button class="moins" onclick="decrementerNombre(this)">-</button><span class="nombre">0</span><button class="plus" onclick="incrementerNombre(this)">+</button>
+        <br>
+        <label>
+            <input type="checkbox" name="Commande" value="Asperges">
+            Commander
+        </label>
+        <br>
+        <form action="https://grifgraf.ca/n-a-4438.html">
+            <input type="submit" value="Lien Web">
+        </form>
+    </div>
+
+    <div class="item" id="Asian Culture & Buddha">
+        <img src="../Images_12X12/GJKE-NFOQ.png" alt="Asian Culture & Buddha">
+        <br>
+        Asian Culture & Buddha
+        <br>
+        <button class="moins" onclick="decrementerNombre(this)">-</button><span class="nombre">0</span><button class="plus" onclick="incrementerNombre(this)">+</button>
+        <br>
+        <label>
+            <input type="checkbox" name="Commande" value="Asian Culture & Buddha">
+            Commander
+        </label>
+        <br>
+        <form action="https://grifgraf.ca/n-a-4403.html">
+            <input type="submit" value="Lien Web">
+        </form>
+    </div>
+
+    <div class="item" id="Asian Culture & Buddha II">
+        <img src="../Images_12X12/CKXQ-HTVE.png" alt="Asian Culture & Buddha II">
+        <br>
+        Asian Culture & Buddha II
+        <br>
+        <button class="moins" onclick="decrementerNombre(this)">-</button><span class="nombre">0</span><button class="plus" onclick="incrementerNombre(this)">+</button>
+        <br>
+        <label>
+            <input type="checkbox" name="Commande" value="Asian Culture & Buddha II">
+            Commander
+        </label>
+        <br>
+        <form action="https://grifgraf.ca/n-a-4449.html">
+            <input type="submit" value="Lien Web">
+        </form>
+    </div>
+
+    <div class="item" id="Bamboo & Stones On Water">
+        <img src="../Images_12X12/KZHZ-7SXP.png" alt="Bamboo & Stones On Water">
+        <br>
+        Bamboo & Stones On Water
+        <br>
+        <button class="moins" onclick="decrementerNombre(this)">-</button><span class="nombre">0</span><button class="plus" onclick="incrementerNombre(this)">+</button>
+        <br>
+        <label>
+            <input type="checkbox" name="Commande" value="Bamboo & Stones On Water">
+            Commander
+        </label>
+        <br>
+        <form action="https://grifgraf.ca/n-a-4377.html">
+            <input type="submit" value="Lien Web">
+        </form>
+    </div>
+
+    <div class="item" id="Bananes">
+        <img src="../Images_12X12/EBJK-3LO7.png" alt="Bananes">
+        <br>
+        Bananes
+        <br>
+        <button class="moins" onclick="decrementerNombre(this)">-</button><span class="nombre">0</span><button class="plus" onclick="incrementerNombre(this)">+</button>
+        <br>
+        <label>
+            <input type="checkbox" name="Commande" value="Bananes">
+            Commander
+        </label>
+        <br>
+        <form action="https://grifgraf.ca/n-a-4405.html">
+            <input type="submit" value="Lien Web">
+        </form>
+    </div>
+
+    <div class="item" id="Tomates & Basilic">
+        <img src="../Images_12X12/MN0T-3CWR.png" alt="Tomates & Basilic">
+        <br>
+        Tomates & Basilic
+        <br>
+        <button class="moins" onclick="decrementerNombre(this)">-</button><span class="nombre">0</span><button class="plus" onclick="incrementerNombre(this)">+</button>
+        <br>
+        <label>
+            <input type="checkbox" name="Commande" value="Tomates & Basilic">
+            Commander
+        </label>
+        <br>
+        <form action="https://grifgraf.ca/n-a-4393.html">
+            <input type="submit" value="Lien Web">
+        </form>
+    </div>
+
+    <div class="item" id="Beautiful White Calla Lily">
+        <img src="../Images_12X12/DAAN-5GWB.png" alt="Beautiful White Calla Lily">
+        <br>
+        Beautiful White Calla Lily
+        <br>
+        <button class="moins" onclick="decrementerNombre(this)">-</button><span class="nombre">0</span><button class="plus" onclick="incrementerNombre(this)">+</button>
+        <br>
+        <label>
+            <input type="checkbox" name="Commande" value="Beautiful White Calla Lily">
+            Commander
+        </label>
+        <br>
+        <form action="https://grifgraf.ca/n-a-4435.html">
+            <input type="submit" value="Lien Web">
+        </form>
+    </div>
+
+    <div class="item" id="Believe In Yourself">
+        <img src="../Images_12X12/ODIT-0I00.png" alt="Believe In Yourself">
+        <br>
+        Believe In Yourself
+        <br>
+        <button class="moins" onclick="decrementerNombre(this)">-</button><span class="nombre">0</span><button class="plus" onclick="incrementerNombre(this)">+</button>
+        <br>
+        <label>
+            <input type="checkbox" name="Commande" value="Believe In Yourself">
+            Commander
+        </label>
+        <br>
+        <form action="https://grifgraf.ca/believe-in-yourself.html">
+            <input type="submit" value="Lien Web">
+        </form>
+    </div>
+
+    <div class="item" id="Bien Etre">
+        <img src="../Images_12X12/OXS0-GKP0.png" alt="Bien Etre">
+        <br>
+        Bien Etre
+        <br>
+        <button class="moins" onclick="decrementerNombre(this)">-</button><span class="nombre">0</span><button class="plus" onclick="incrementerNombre(this)">+</button>
+        <br>
+        <label>
+            <input type="checkbox" name="Commande" value="Bien Etre">
+            Commander
+        </label>
+        <br>
+        <form action="https://grifgraf.ca/bien-tre.html">
+            <input type="submit" value="Lien Web">
+        </form>
+    </div>
+
+    <div class="item" id="Black Rocks">
+        <img src="../Images_12X12/RRTI-080R.png" alt="Black Rocks">
         <br>
         Black Rocks
         <br>
-        <button class="plus" onclick="incrementerNombre(this)">+</button><span class="nombre">0</span><button class="moins" onclick="decrementerNombre(this)">-</button>
+        <button class="moins" onclick="decrementerNombre(this)">-</button><span class="nombre">0</span><button class="plus" onclick="incrementerNombre(this)">+</button>
         <br>
         <label>
-            <input type="checkbox" name="Commande" value="Black_Rocks">
+            <input type="checkbox" name="Commande" value="Black Rocks">
             Commander
         </label>
+        <br>
+        <form action="https://grifgraf.ca/n-a-4446.html">
+            <input type="submit" value="Lien Web">
+        </form>
     </div>
-    <div class="item">
-        <img src="../12X12/WZ19-POKZ.png" alt="Black Zen Stones And Yellow Orchid">
+
+    <div class="item" id="Black Zen Stones & Yellow Orchid">
+        <img src="../Images_12X12/WZ19-POKZ.png" alt="Black Zen Stones & Yellow Orchid">
         <br>
         Black Zen Stones & Yellow Orchid
         <br>
-        <button class="plus" onclick="incrementerNombre(this)">+</button><span class="nombre">0</span><button class="moins" onclick="decrementerNombre(this)">-</button>
+        <button class="moins" onclick="decrementerNombre(this)">-</button><span class="nombre">0</span><button class="plus" onclick="incrementerNombre(this)">+</button>
         <br>
         <label>
-            <input type="checkbox" name="Commande" value="Black_Zen_Stones_Yellow_Orchid">
+            <input type="checkbox" name="Commande" value="Black Zen Stones & Yellow Orchid">
             Commander
         </label>
-    </div>
-    <div class="item">
-        <img src="BPMC-O0RM.png" alt="Black Zen Stones With Purple Flower">
         <br>
-        Black Zen Stones With Purple Flower
-        <br>
+        <form action="https://grifgraf.ca/n-a-4437.html">
+            <input type="submit" value="Lien Web">
+        </form>
     </div>
-    <div class="item">
-        <img src="0JMR-ANDH.png" alt="Blood Orange">
+
+    <div class="item" id="Black Zen Stones & Purple Flower">
+        <img src="../Images_12X12/BPMC-O0RM.png" alt="Black Zen Stones & Purple Flower">
+        <br>
+        Black Zen Stones & Purple Flower
+        <br>
+        <button class="moins" onclick="decrementerNombre(this)">-</button><span class="nombre">0</span><button class="plus" onclick="incrementerNombre(this)">+</button>
+        <br>
+        <label>
+            <input type="checkbox" name="Commande" value="Black Zen Stones & Purple Flower">
+            Commander
+        </label>
+        <br>
+        <form action="https://grifgraf.ca/n-a-4394.html">
+            <input type="submit" value="Lien Web">
+        </form>
+    </div>
+
+    <div class="item" id="Blood Orange">
+        <img src="../Images_12X12/0JMR-ANDH.png" alt="Blood Orange">
+        <br>
         Blood Orange
+        <br>
+        <button class="moins" onclick="decrementerNombre(this)">-</button><span class="nombre">0</span><button class="plus" onclick="incrementerNombre(this)">+</button>
+        <br>
+        <label>
+            <input type="checkbox" name="Commande" value="Blood Orange">
+            Commander
+        </label>
+        <br>
+        <form action="https://grifgraf.ca/n-a-4444.html">
+            <input type="submit" value="Lien Web">
+        </form>
     </div>
-    <div class="item">
-        <img src="8BL4-3JAU.png" alt="Blue Orchid Flower With Bamboo">
-        Blue Orchid Flower With Bamboo
+
+    <div class="item" id="Blooming Pink Hibiscus">
+        <img src="../Images_12X12/67LR-TNDN.png" alt="Blooming Pink Hibiscus">
+        <br>
+        Blooming Pink Hibiscus
+        <br>
+        <button class="moins" onclick="decrementerNombre(this)">-</button><span class="nombre">0</span><button class="plus" onclick="incrementerNombre(this)">+</button>
+        <br>
+        <label>
+            <input type="checkbox" name="Commande" value="Blooming Pink Hibiscus">
+            Commander
+        </label>
+        <br>
+        <form action="https://grifgraf.ca/n-a-4410.html">
+            <input type="submit" value="Lien Web">
+        </form>
     </div>
-    <div class="item">
-        <img src="QJZS-QE0I.png" alt="Buddha In Meditation">
+
+    <div class="item" id="Blue Marble Coast Shell">
+        <img src="../Images_12X12/ZQXJ-XR3K.png" alt="Blue Marble Coast Shell">
+        <br>
+        Blue Marble Coast Shell
+        <br>
+        <button class="moins" onclick="decrementerNombre(this)">-</button><span class="nombre">0</span><button class="plus" onclick="incrementerNombre(this)">+</button>
+        <br>
+        <label>
+            <input type="checkbox" name="Commande" value="Blue Marble Coast Shell">
+            Commander
+        </label>
+        <br>
+        <form action="https://grifgraf.ca/blue-marble-coast-shell.html">
+            <input type="submit" value="Lien Web">
+        </form>
+    </div>
+
+    <div class="item" id="Blue Orchid & Bamboo">
+        <img src="../Images_12X12/8BL4-3JAU.png" alt="Blue Orchid & Bamboo">
+        <br>
+        Blue Orchid & Bamboo
+        <br>
+        <button class="moins" onclick="decrementerNombre(this)">-</button><span class="nombre">0</span><button class="plus" onclick="incrementerNombre(this)">+</button>
+        <br>
+        <label>
+            <input type="checkbox" name="Commande" value="Blue Orchid & Bamboo">
+            Commander
+        </label>
+        <br>
+        <form action="https://grifgraf.ca/n-a-4465.html">
+            <input type="submit" value="Lien Web">
+        </form>
+    </div>
+
+    <div class="item" id="Chatelain">
+        <img src="../Images_12X12/JP0T-1SWW.png" alt="Chatelain">
+        <br>
+        Chatelain
+        <br>
+        <button class="moins" onclick="decrementerNombre(this)">-</button><span class="nombre">0</span><button class="plus" onclick="incrementerNombre(this)">+</button>
+        <br>
+        <label>
+            <input type="checkbox" name="Commande" value="Chatelain">
+            Commander
+        </label>
+        <br>
+        <form action="https://grifgraf.ca/n-a-820.html">
+            <input type="submit" value="Lien Web">
+        </form>
+    </div>
+
+    <div class="item" id="Chatelain">
+        <img src="../Images_12X12/UGHZ-C50B.png" alt="Chatelain">
+        <br>
+        Chatelain
+        <br>
+        <button class="moins" onclick="decrementerNombre(this)">-</button><span class="nombre">0</span><button class="plus" onclick="incrementerNombre(this)">+</button>
+        <br>
+        <label>
+            <input type="checkbox" name="Commande" value="Chatelain">
+            Commander
+        </label>
+        <br>
+        <form action="https://grifgraf.ca/n-a-821.html">
+            <input type="submit" value="Lien Web">
+        </form>
+    </div>
+
+    <div class="item" id="Brocoli">
+        <img src="../Images_12X12/NVJU-J5UP.png" alt="Brocoli">
+        <br>
+        Brocoli
+        <br>
+        <button class="moins" onclick="decrementerNombre(this)">-</button><span class="nombre">0</span><button class="plus" onclick="incrementerNombre(this)">+</button>
+        <br>
+        <label>
+            <input type="checkbox" name="Commande" value="Brocoli">
+            Commander
+        </label>
+        <br>
+        <form action="https://grifgraf.ca/n-a-4443.html">
+            <input type="submit" value="Lien Web">
+        </form>
+    </div>
+
+    <div class="item" id="Broken Jetty">
+        <img src="../Images_12X12/WVNM-KCSO.png" alt="Broken Jetty">
+        <br>
+        Broken Jetty
+        <br>
+        <button class="moins" onclick="decrementerNombre(this)">-</button><span class="nombre">0</span><button class="plus" onclick="incrementerNombre(this)">+</button>
+        <br>
+        <label>
+            <input type="checkbox" name="Commande" value="Broken Jetty">
+            Commander
+        </label>
+        <br>
+        <form action="https://grifgraf.ca/n-a-4457.html">
+            <input type="submit" value="Lien Web">
+        </form>
+    </div>
+
+    <div class="item" id="Buddha In Meditation">
+        <img src="../Images_12X12/QJZS-QE0I.png" alt="Buddha In Meditation">
+        <br>
         Buddha In Meditation
+        <br>
+        <button class="moins" onclick="decrementerNombre(this)">-</button><span class="nombre">0</span><button class="plus" onclick="incrementerNombre(this)">+</button>
+        <br>
+        <label>
+            <input type="checkbox" name="Commande" value="Buddha In Meditation">
+            Commander
+        </label>
+        <br>
+        <form action="https://grifgraf.ca/n-a-4412.html">
+            <input type="submit" value="Lien Web">
+        </form>
     </div>
-    <div class="item">
-        <img src="PLAC-GQEF.png" alt="Butterfly On The Sand">
+
+    <div class="item" id="Bull Skull">
+        <img src="../Images_12X12/MGPF-ZOFD.png" alt="Bull Skull">
+        <br>
+        Bull Skull
+        <br>
+        <button class="moins" onclick="decrementerNombre(this)">-</button><span class="nombre">0</span><button class="plus" onclick="incrementerNombre(this)">+</button>
+        <br>
+        <label>
+            <input type="checkbox" name="Commande" value="Bull Skull">
+            Commander
+        </label>
+        <br>
+        <form action="https://grifgraf.ca/cr-ne-d-un-cerf.html">
+            <input type="submit" value="Lien Web">
+        </form>
+    </div>
+
+    <div class="item" id="Butterfly On The Sand">
+        <img src="../Images_12X12/PLAC-GQEF.png" alt="Butterfly On The Sand">
+        <br>
         Butterfly On The Sand
-    </div>
-    <div class="item">
-        <img src="N6SG-QWQT.png" alt="Flamingo">
-        Flamingo
-    </div>
-    <div class="item">
-        <img src="FOMT-7MVK.png" alt="Flamingo Love">
-        Flamingo Love
-    </div>
-    <div class="item">
-        <img src="OET0-GYXT.png" alt="Flamingo Love">
-        Flamingo Love
-    </div>
-    <div class="item">
-        <img src="D0H4-WNRM.png" alt="Garden With Frangipani And Stones">
-        Garden With Frangipani And Stones
-    </div>
-    <div class="item">
-        <img src="JMHO-AY2V.png" alt="Janelle Penner - Wine Tasting II">
-        Janelle Penner - Wine Tasting II
-    </div>
-    <div class="item">
-        <img src="GRQG-KIPL.png" alt="Magical Stones Floating">
-        Magical Stones Floating
-    </div>
-    <div class="item">
-        <img src="VSCJ-GSZT.png" alt="Nan - Blue Marble Coast Crab">
-        Nan - Blue Marble Coast Crab
-    </div>
-    <div class="item">
-        <img src="BF50-NAQX.png" alt="Orange">
-        Orange
-    </div>
-    <div class="item">
-        <img src="Z0PK-9RDJ.png" alt="Orchid In Zen Garden">
-        Orchid In Zen Garden
-    </div>
-    <div class="item">
-        <img src="DB11-DCO5.png" alt="Patrice Murciano - Albert Einstein">
-        Patrice Murciano - Albert Einstein
-    </div>
-    <div class="item">
-        <img src="CZEE-YGTC.png" alt="Patrice Murciano - Animal - Boston">
-        Patrice Murciano - Animal - Boston
-    </div>
-    <div class="item">
-        <img src="DYHJ-KC9S.png" alt="Patrice Murciano - Animals - Bear ">
-        Patrice Murciano - Animals - Bear 
-    </div>
-    <div class="item">
-        <img src="AXQN-PUJO.png" alt="Patrice Murciano - Animals - Bull">
-        Patrice Murciano - Animals - Bull
-    </div>
-    <div class="item">
-        <img src="5H2V-B29Q.png" alt="Patrice Murciano - Animals - Butterfly">
-        Patrice Murciano - Animals - Butterfly
-    </div>
-    <div class="item">
-        <img src="8LU8-LJ0M.png" alt="Patrice Murciano - Animals - Chameleon">
-        Patrice Murciano - Animals - Chameleon
-    </div>
-    <div class="item">
-        <img src="09LI-0HP2.png" alt="Patrice Murciano - Animals - Chimp - DJ Monkey">
-        Patrice Murciano - Animals - Chimp - DJ Monkey
-    </div>
-    <div class="item">
-        <img src="TWBG-ROUI.png" alt="Patrice Murciano - Animals - Chimp - Homo Gamer">
-        Patrice Murciano - Animals - Chimp - Homo Gamer
-    </div>
-    <div class="item">
-        <img src="AV2L-OXQ0.png" alt="Patrice Murciano - Animals - Deer">
-        Patrice Murciano - Animals - Deer
-    </div>
-    <div class="item">
-        <img src="AQN6-UDO1.png" alt="Patrice Murciano - Animals - Dinosaur">
-        Patrice Murciano - Animals - Dinosaur
-    </div>
-    <div class="item">
-        <img src="MRPL-NIWK.png" alt="Patrice Murciano - Animals - Dog - Bull">
-        Patrice Murciano - Animals - Dog - Bull
-    </div>
-    <div class="item">
-        <img src="VFEU-BNNI.png" alt="Patrice Murciano - Animals - Dog - Bully">
-        Patrice Murciano - Animals - Dog - Bully
-    </div>
-    <div class="item">
-        <img src="0GJH-MOQV.png" alt="Patrice Murciano - Animals - Dog - Diesel">
-        Patrice Murciano - Animals - Dog - Diesel
-    </div>
-    <div class="item">
-        <img src="BR0P-LGTS.png" alt="Patrice Murciano - Animals - Elephant">
-        Patrice Murciano - Animals - Elephant
-    </div>
-    <div class="item">
-        <img src="R4ZQ-CHCN.png" alt="Patrice Murciano - Animals - Elephant">
-        Patrice Murciano - Animals - Elephant
-    </div>
-    <div class="item">
-        <img src="HAYW-VBSA.png" alt="Patrice Murciano - Animals - Giraffe">
-        Patrice Murciano - Animals - Giraffe
-    </div>
-    <div class="item">
-        <img src="BF50-NAQX.png" alt="Patrice Murciano - Animals - Lion">
-        Patrice Murciano - Animals - Lion
-    </div>
-    <div class="item">
-        <img src="KAHW-9J0Z.png" alt="Patrice Murciano - Animals - Owl">
-        Patrice Murciano - Animals - Owl
-    </div>
-    <div class="item">
-        <img src="J0RR-WTFR.png" alt="Patrice Murciano - Animals - Panda">
-        Patrice Murciano - Animals - Panda
-    </div>
-    <div class="item">
-        <img src="8TRB-D1ZY.png" alt="Patrice Murciano - Animals - Panda">
-        Patrice Murciano - Animals - Panda
-    </div>
-    <div class="item">
-        <img src="84UB-PP5D.png" alt="Patrice Murciano - Animals - Tiger">
-        Patrice Murciano - Animals - Tiger
-    </div>
-    <div class="item">
-        <img src="8XPG-9YXF.png" alt="Patrice Murciano - Animals - Unicorn">
-        Patrice Murciano - Animals - Unicorn
-    </div>
-    <div class="item">
-        <img src="Q9JJ-EZSW.png" alt="Patrice Murciano - Animals - Wolf">
-        Patrice Murciano - Animals - Wolf
-    </div>
-    <div class="item">
-        <img src="L1CS-RFQI.png" alt="Patrice Murciano - Animals - Zebra ">
-        Patrice Murciano - Animals - Zebra 
-    </div>
-    <div class="item">
-        <img src="R20P-UG0A.png" alt="Patrice Murciano - Animals White - Lion">
-        Patrice Murciano - Animals White - Lion
-    </div>
-    <div class="item">
-        <img src=" IJTK-CD3K.png" alt="Patrice Murciano - Animals White - Tiger I">
-        Patrice Murciano - Animals White - Tiger I
-    </div>
-    <div class="item">
-        <img src="W5LO-VP92.png" alt="Patrice Murciano - Animals White - Tiger II">
-        Patrice Murciano - Animals White - Tiger II
-    </div>
-    <div class="item">
-        <img src="Z99O-IFUB.png" alt="Patrice Murciano - Animals White - Wolf">
-        Patrice Murciano - Animals White - Wolf
-    </div>
-    <div class="item">
-        <img src="PAVS-FSEA.png" alt="Patrice Murciano - Aquaman - 2">
-        Patrice Murciano - Aquaman - 2
-    </div>
-    <div class="item">
-        <img src="L6QE-JRPV.png" alt="Patrice Murciano - Baby Arie">
-        Patrice Murciano - Baby Arie
-    </div>
-    <div class="item">
-        <img src="Z1QC-7MN9.png" alt="Patrice Murciano - Baby Batman">
-        Patrice Murciano - Baby Batman
-    </div>
-    <div class="item">
-        <img src="UFIZ-JNLL.png" alt="Patrice Murciano - Baby Black Panther">
-        Patrice Murciano - Baby Black Panther
-    </div>
-    <div class="item">
-        <img src="0AQ3-0JM6.png" alt="Patrice Murciano - Baby Blanche Neige">
-        Patrice Murciano - Baby Blanche Neige
-    </div>
-    <div class="item">
-        <img src="KG5D-1R9N.png" alt="Patrice Murciano - Baby Captain America">
-        Patrice Murciano - Baby Captain America
-    </div>
-    <div class="item">
-        <img src="G8P9-5AIZ.png" alt="Patrice Murciano - Baby Catwoman">
-        Patrice Murciano - Baby Catwoman
-    </div>
-    <div class="item">
-        <img src="RRU0-WSK1.png" alt="Patrice Murciano - Baby Catwoman 3">
-        Patrice Murciano - Baby Catwoman 3
-    </div>
-    <div class="item">
-        <img src="GKIE-B745.png" alt="Patrice Murciano - Baby Deadpool">
-        Patrice Murciano - Baby Deadpool
-    </div>
-    <div class="item">
-        <img src="MZQ1-CLL0.png" alt="Patrice Murciano - Baby Grogu">
-        Patrice Murciano - Baby Grogu
-    </div>
-    <div class="item">
-        <img src="077G-GKON.png" alt="Patrice Murciano - Baby Groot">
-        Patrice Murciano - Baby Groot
-    </div>
-    <div class="item">
-        <img src="1L08-WFOJ.png" alt="Patrice Murciano - Baby Harley Quinn">
-        Patrice Murciano - Baby Harley Quinn
-    </div>
-    <div class="item">
-        <img src="HOEE-34Q5.png" alt="Patrice Murciano - Baby Hulk">
-        Patrice Murciano - Baby Hulk
-    </div>
-    <div class="item">
-        <img src="RB0W-0U0Z.png" alt="Patrice Murciano - Baby Jack Sparrow 2">
-        Patrice Murciano - Baby Jack Sparrow 2
-    </div>
-    <div class="item">
-        <img src="XFNI-6HAV.png" alt="Patrice Murciano - Baby Joker">
-        Patrice Murciano - Baby Joker
-    </div>
-    <div class="item">
-        <img src="6PEW-7YGN.png" alt="Patrice Murciano - Baby Spiderman">
-        Patrice Murciano - Baby Spiderman
-    </div>
-    <div class="item">
-        <img src="16AB-RJ99.png" alt="Patrice Murciano - Baby Stitch">
-        Patrice Murciano - Baby Stitch
-    </div>
-    <div class="item">
-        <img src="EVHY-KDZC.png" alt="Patrice Murciano - Baby Superman">
-        Patrice Murciano - Baby Superman
-    </div>
-    <div class="item">
-        <img src="104V-MMFD.png" alt="Patrice Murciano - Baby Wolverine">
-        Patrice Murciano - Baby Wolverine
-    </div>
-    <div class="item">
-        <img src="2KPP-HYS9.png" alt="Patrice Murciano - Baby Wonder Woman">
-        Patrice Murciano - Baby Wonder Woman
-    </div>
-    <div class="item">
-        <img src="YJX6-RLV8.png" alt="Patrice Murciano - Caliente">
-        Patrice Murciano - Caliente
-    </div>
-    <div class="item">
-        <img src="PBE5-P6IQ.png" alt="Patrice Murciano - Close-Ups - Fashion">
-        Patrice Murciano - Close-Ups - Fashion
-    </div>
-    <div class="item">
-        <img src="YYKE-65GD.png" alt="Patrice Murciano - Close-Ups - Freedom's Colors">
-        Patrice Murciano - Close-Ups - Freedom's Colors
-    </div>
-    <div class="item">
-        <img src="H5DQ-UQCF.png" alt="Patrice Murciano - Close-Ups - L'Œil de la Providence">
-        Patrice Murciano - Close-Ups - L'Œil de la Providence
-    </div>
-    <div class="item">
-        <img src="SDPS-Y23R.png" alt="Patrice Murciano - Fille Du Desert">
-        Patrice Murciano - Fille Du Desert
-    </div>
-    <div class="item">
-        <img src="E0O0-ZP7V.png" alt="Patrice Murciano - Harley Quinn - Folie a Deux">
-        Patrice Murciano - Harley Quinn - Folie a Deux
-    </div>
-    <div class="item">
-        <img src="GWOV-5BJQ.png" alt="Patrice Murciano - Hollywood">
-        Patrice Murciano - Hollywood
-    </div>
-    <div class="item">
-        <img src="JSAA-SUCU.png" alt="Patrice Murciano - Jeanne d'Arc">
-        Patrice Murciano - Jeanne d'Arc
-    </div>
-    <div class="item">
-        <img src="O8DS-40D0.png" alt="Patrice Murciano - Jim Hendrix">
-        Patrice Murciano - Jim Hendrix
-    </div>
-    <div class="item">
-        <img src="MD0L-TWEP.png" alt="Patrice Murciano - Jungle king">
-        Patrice Murciano - Jungle king
-    </div>
-    <div class="item">
-        <img src="RSEK-9OWQ.png" alt="Patrice Murciano - L'epsagnole">
-        Patrice Murciano - L'epsagnole
-    </div>
-    <div class="item">
-        <img src="D0RR-COED.png" alt="Patrice Murciano - La Passion">
-        Patrice Murciano - La Passion
-    </div>
-    <div class="item">
-        <img src="AYIU-1GY7.png" alt="Patrice Murciano - Le Petit Prince">
-        Patrice Murciano - Le Petit Prince
-    </div>
-    <div class="item">
-        <img src="HNJI-LVQT.png" alt="Patrice Murciano - Le Secret De Leonard">
-        Patrice Murciano - Le Secret De Leonard
-    </div>
-    <div class="item">
-        <img src="EOBF-F75H.png" alt="Patrice Murciano - LittleKiss">
-        Patrice Murciano - LittleKiss
-    </div>
-    <div class="item">
-        <img src="TUTN-CVIT.png" alt="Patrice Murciano - Maria Magdalena">
-        Patrice Murciano - Maria Magdalena
-    </div>
-    <div class="item">
-        <img src="BTGM-WY2H.png" alt="Patrice Murciano - Medusa">
-        Patrice Murciano - Medusa
-    </div>
-    <div class="item">
-        <img src="ZH3K-JHUP.png" alt="Patrice Murciano - MetaMonkey">
-        Patrice Murciano - MetaMonkey
-    </div>
-    <div class="item">
-        <img src="HTVO-KXZC.png" alt="Patrice Murciano - Muses - Cuba Libre">
-        Patrice Murciano - Muses - Cuba Libre
-    </div>
-    <div class="item">
-        <img src="XUWF-085N.png" alt="Patrice Murciano - Muses - Mystery">
-        Patrice Murciano - Muses - Mystery
-    </div>
-    <div class="item">
-        <img src="A3K0-JEPU.png" alt="Patrice Murciano - Petite Fleur #1">
-        Patrice Murciano - Petite Fleur #1
-    </div>
-    <div class="item">
-        <img src="IEIL-SSXF.png" alt="Patrice Murciano - Petite Fleur #10">
-        Patrice Murciano - Petite Fleur #10
-    </div>
-    <div class="item">
-        <img src="LJFN-V2XZ.png" alt="Patrice Murciano - Petite Fleur #11">
-        Patrice Murciano - Petite Fleur #11
-    </div>
-    <div class="item">
-        <img src="UP82-G3XB.png" alt="Patrice Murciano - Petite Fleur #12">
-        Patrice Murciano - Petite Fleur #12
-    </div>
-    <div class="item">
-        <img src="MCN5-QZ0S.png" alt="Patrice Murciano - Petite Fleur #2">
-        Patrice Murciano - Petite Fleur #2
-    </div>
-    <div class="item">
-        <img src="XQWL-RQWK.png" alt="Patrice Murciano - Petite Fleur #3">
-        Patrice Murciano - Petite Fleur #3
-    </div>
-    <div class="item">
-        <img src="YHPA-9JPC.png" alt="Patrice Murciano - Petite Fleur #4">
-        Patrice Murciano - Petite Fleur #4
-    </div>
-    <div class="item">
-        <img src="8DOC-YQ0H.png" alt="Patrice Murciano - Petite Fleur #5">
-        Patrice Murciano - Petite Fleur #5
-    </div>
-    <div class="item">
-        <img src="KLDJ-HNHR.png" alt="Patrice Murciano - Petite Fleur #6">
-        Patrice Murciano - Petite Fleur #6
-    </div>
-    <div class="item">
-        <img src="XZ14-9WB8.png" alt="Patrice Murciano - Petite Fleur #7">
-        Patrice Murciano - Petite Fleur #7
-    </div>
-    <div class="item">
-        <img src="OTCU-ACS0.png" alt="Patrice Murciano - Petite Fleur #8">
-        Patrice Murciano - Petite Fleur #8
-    </div>
-    <div class="item">
-        <img src="DT4N-OSYU.png" alt="Patrice Murciano - Petite Fleur #9">
-        Patrice Murciano - Petite Fleur #9
-    </div>
-    <div class="item">
-        <img src="QEIK-Z1SH.png" alt="Patrice Murciano - Redemption">
-        Patrice Murciano - Redemption
-    </div>
-    <div class="item">
-        <img src="OET0-GYXT.png" alt="Flamingo Love">
-        Flamingo Love
-    </div>
-    <div class="item">
-        <img src="OET0-GYXT.png" alt="Flamingo Love">
-        Flamingo Love
-    </div>
-    <div class="item">
-        <img src="OET0-GYXT.png" alt="Flamingo Love">
-        Flamingo Love
-    </div>
-    <div class="item">
-        <img src="OET0-GYXT.png" alt="Flamingo Love">
-        Flamingo Love
-    </div>
+        <br>
+        <button class="moins" onclick="decrementerNombre(this)">-</button><span class="nombre">0</span><button class="plus" onclick="incrementerNombre(this)">+</button>
+        <br>
+        <label>
+            <input type="checkbox" name="Commande" value="Butterfly On The Sand">
+            Commander
+        </label>
+        <br>
+        <form action="https://grifgraf.ca/n-a-4382.html">
+            <input type="submit" value="Lien Web">
+        </form>
+    </div>
+
+    <div class="item" id="Cacatoes & Flowers">
+        <img src="../Images_12X12/92PI-QHWE.png" alt="Cacatoes & Flowers">
+        <br>
+        Cacatoes & Flowers
+        <br>
+        <button class="moins" onclick="decrementerNombre(this)">-</button><span class="nombre">0</span><button class="plus" onclick="incrementerNombre(this)">+</button>
+        <br>
+        <label>
+            <input type="checkbox" name="Commande" value="Cacatoes & Flowers">
+            Commander
+        </label>
+        <br>
+        <form action="https://grifgraf.ca/cacatoes-and-flowers.html">
+            <input type="submit" value="Lien Web">
+        </form>
+    </div>
+
+    
+
 </div>
 
 <script>
@@ -537,6 +756,7 @@
 
 <script src="quantite.js"></script>
 <script src="Liste_Commande.html"></script>
+<script src="Recherche.js"></script>
 
 </body>
 </html>
