@@ -1,29 +1,21 @@
 function updateCheckboxes() {
-    // Récupérer toutes les cases à cocher avec le nom "category1" et "category2"
-    var Betty_Boop = document.querySelectorAll('input[name="Betty_Boop"]:checked');
-    var Deep_Sea = document.querySelectorAll('input[name="Deep_Sea"]:checked');
-    var Black_Rocks = document.querySelectorAll('input[name="Black_Rocks"]:checked');
-    var Black_Zen_Stones_Yellow_Orchid = document.querySelectorAll('input[name="Black_Zen_Stones_Yellow_Orchid"]:checked');
+  // Récupérer toutes les cases à cocher
+  var allCheckboxes = document.querySelectorAll('input[type="checkbox"]:checked');
 
-    // Construire la chaîne de résultats en fonction des cases cochées dans chaque catégorie
-    var result = 'A Commander: ';
+  // Construire la chaîne de résultats en fonction des cases cochées
+  var result = 'A Commander: ';
 
-    Betty_Boop.forEach(function(checkbox) {
-      result += 'Betty Boop' + checkbox.value + ' ';
-    });
+  allCheckboxes.forEach(function(checkbox) {
+      result += checkbox.name + checkbox.value + ' ';
+  });
 
-    Deep_Sea.forEach(function(checkbox) {
-      result += 'Deep Sea' + checkbox.value + ' ';
-    });
+  // Mettre à jour le paragraphe avec les options sélectionnées
+  document.getElementById('result').textContent = result;
+}
 
-    Black_Rocks.forEach(function(checkbox) {
-        result += 'Black Rocks' + checkbox.value + ' ';
-    });
+function saveData() {
+  // Vous pouvez ajouter ici la logique pour enregistrer les données si nécessaire
 
-    Black_Zen_Stones_Yellow_Orchid.forEach(function(checkbox) {
-        result += 'Black Zen Stones Yellow Orchid' + checkbox.value + ' ';
-    });
-
-    // Mettre à jour le paragraphe avec les options sélectionnées
-    document.getElementById('result').textContent = result;
-  }
+  // Redirection vers la page Liste_Commande.html
+  window.location.href = 'Liste_Commande.html';
+}
