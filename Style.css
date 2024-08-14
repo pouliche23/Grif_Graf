@@ -13,6 +13,10 @@ body{
     font-size: 15px;
     }
 
+.menu{
+    box-sizing: border-box;
+}
+
 .menu-item1{
     width:14.28%;
     height: 125px;
@@ -26,13 +30,6 @@ body{
     background-color: #F08E7B;
     color: white;
 }
-/*
-.sous-menu{
-    width:14.28%;
-    height: 125px;
-    background-color: #F08E7B;
-    color: white;
-}*/
 
 .menu-item3{
     width:14.28%;
@@ -62,12 +59,44 @@ body{
     color: white;
 }
 
-.rechercher{
-    width:14.28%;
+.rechercher {
+    flex-basis: 14.28%;
     height: 125px;
     background-color: #C65572;
-    color: white;
+    display: flex; /* Pour aligner le champ de texte et le bouton horizontalement */
+    align-items: center; /* Centre les éléments verticalement */
+    justify-content: space-between; /* Espace entre le champ de texte et le bouton */
+    padding: 0 10px; /* Ajoute un peu d'espace à l'intérieur du conteneur */
+    box-sizing: border-box; /* Inclut les padding dans la taille totale */
 }
+
+.rechercher input[type="text"] {
+    width: 60%; /* Le champ de texte prend 70% de la largeur du conteneur */
+    height: 70%; /* Ajuste la hauteur pour rester proportionnelle */
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    color: black;
+}
+
+
+.rechercher button.rechercher-btn {
+    width: 40%; 
+    height: 70%; 
+    background-color: #AD336D;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.rechercher button.rechercher-btn:hover {
+    background-color: white;
+    color: #AD336D;
+    border: 3px solid #AD336D; 
+} 
 
 li{
     list-style:none !important; 
@@ -85,6 +114,9 @@ nav ul li{
     line-height:100px;
     float:none;
     position: relative; /* Parent relatif pour le sous-menu */
+    padding:0;
+    margin:0;
+    list-style: none;
     }
 
 nav ul li ul {
@@ -92,39 +124,42 @@ nav ul li ul {
     position: absolute;
     top: 125px; /* Positionner sous le parent */
     left: 0;
-    }
+}
 
-nav ul li:hover ul {
-    display: block; /* Affiche le sous-menu */
+nav ul li:hover ul, 
+nav ul li ul:hover {
+    display: block;
     z-index: 99999;
-    }
-    
-    nav ul li ul.sous-menu {
-        display: none; /* Masque le sous-menu par défaut */
-        position: absolute;
-        top: 100%; /* Positionne le sous-menu juste en dessous du parent */
-        left: 0; /* Aligne le sous-menu avec le bord gauche du parent */
-        width: 100%; /* S'assure que le sous-menu s'étend sur la largeur du parent */
-        background-color: #F08E7B; /* Couleur de fond du sous-menu */
-    }
+}
 
-    nav ul li:hover ul.sous-menu {
-        display: block; /* Affiche le sous-menu lors du survol */
-    }
+nav ul li ul.sous-menu {
+    display: none; /* Masque le sous-menu par défaut */
+    position: absolute;
+    top: 100%; /* Positionne le sous-menu juste en dessous du parent */
+    left: 0; /* Aligne le sous-menu avec le bord gauche du parent */
+    width: 100%; /* S'assure que le sous-menu s'étend sur la largeur du parent */
+    background-color: #F08E7B; /* Couleur de fond du sous-menu */
+    z-index: 1000;
+}
+
+nav ul li:hover ul.sous-menu {
+    display: block; /* Affiche le sous-menu lors du survol */
+}
+
     
-    nav ul li ul.sous-menu li {
-        width: 100%; /* Chaque élément du sous-menu occupe toute la largeur */
-        text-align: left; /* Aligne le texte à gauche */
-    }
+nav ul li ul.sous-menu li {
+    width: 100%; /* Chaque élément du sous-menu occupe toute la largeur */
+    text-align: left; /* Aligne le texte à gauche */
+}
 
 nav ul li a{
     color:#FFF;
     text-decoration:none;
-    }
+}
              
 li a:hover{
     border-bottom:5px #FFF solid;
-    }
+}
             
 nav ul li:hover ul{ 
     list-style:none !important;
@@ -133,29 +168,19 @@ nav ul li:hover ul{
     position:absolute;
     margin-top:5px;
     margin-left:-10px;
-    }
-
-/*
-.sous-menu{
-    display: none;
-    }
-
-li:hover .sous-menu {
-    display: block;
 }
-*/
 
 .grid-container {
     display: grid;
     grid-template-columns: repeat(8, 1fr); /* 4 colonnes de largeur égale */
-    gap: 20px; /* Espacement entre les items */
-    padding: 20px; /* Espacement intérieur */
+    gap: 35px; /* Espacement entre les items */
+    padding: 30px; /* Espacement intérieur */
 }
 
 .item {
     border-image: url('../Cadre.png') 30 round; /* Mettre une bordure en image. Ne fonctionne pas. */
-    background-color: #B185DB; /* Couleur de fond des items */
-    border: 2px solid transparent; /* Bordure des items #6247AA*/
+    background-color: white; /* Couleur de fond des items */
+    border: 10px solid #AD336D; /* Bordure des items #6247AA*/
     padding: 20px; /* Espacement intérieur des items */
     text-align: center; /* Centrer le texte */
     color: black;
