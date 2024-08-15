@@ -171,21 +171,33 @@ nav ul li:hover ul{
 }
 
 .grid-container {
+    width: 200px; /* Fixe la largeur à 200px */
+    height: 200px; /* Fixe la hauteur à 200px */
     display: grid;
-    grid-template-columns: repeat(8, 1fr); /* 4 colonnes de largeur égale */
+    grid-template-columns: repeat(7, 1fr); /* 4 colonnes de largeur égale */
     gap: 35px; /* Espacement entre les items */
-    padding: 30px; /* Espacement intérieur */
+    padding: 60px; /* Espacement intérieur */
+    box-sizing: border-box;
 }
 
 .item {
-    border-image: url('../Cadre.png') 30 round; /* Mettre une bordure en image. Ne fonctionne pas. */
     background-color: white; /* Couleur de fond des items */
-    border: 10px solid #AD336D; /* Bordure des items #6247AA*/
-    padding: 20px; /* Espacement intérieur des items */
+    border: 6px solid #AD336D; /* Bordure des items #6247AA*/
     text-align: center; /* Centrer le texte */
     color: black;
-    font-size: 18px;
+    font-size: 20px;
+    min-width: 200px; /* Fixe la largeur minimale à 200px */
+    min-height: 200px; 
+}
 
+.item-btn{
+    width: 100%; /* Le bouton prend toute la largeur de la cellule */
+    height: 100%; /* Le bouton prend toute la hauteur de la cellule */
+    margin: 0; /* Supprime les marges par défaut */
+    padding: 40px; /* Supprime les padding du bouton */
+    box-sizing: border-box; /* Pour inclure la bordure et le padding dans la taille */
+    background: white;
+    border: none;
 }
 
 /*button{
@@ -214,10 +226,6 @@ form{
 
 label{
     color: white;
-}
-
-.hidden {
-    display: none;
 }
 
 input[type="submit"]{
