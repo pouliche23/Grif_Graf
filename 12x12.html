@@ -15,7 +15,7 @@
 
             <!--<li><img src="logo.jpg" alt="logo"></li> A AJUSTER.-->
 
-            <li class="menu-item1"><a href="Index.html">Accueil</a></li>
+            <li class="menu-item1"><a href="../Index.html">Accueil</a></li>
 
             <li class="menu-item2"><a href="#">Grandeurs</a>
                 <ul class="sous-menu">
@@ -116,27 +116,70 @@
     </header>
 <div class="grid-container">
 
+    <div class="item">
+        <img src="../../Images_12X12/00X0-QKGN.png"></a>
+        <br>
+        <a href="12x12_Animaux.html">
+          <button class="btn-page">Animaux</button>
+      </a>
+    </div>
 
+    <div class="item">
+      <img src="../../Images_12X12/00X0-QKGN.png"></a>
+      <br>
+      <a href="12x12_Divers.html">
+        <button class="btn-page">Divers</button>
+    </a>
+  </div>
+
+  <div class="item">
+    <img src="../../Images_12X12/00X0-QKGN.png"></a>
+    <br>
+    <a href="12x12_Murciano.html">
+      <button class="btn-page">Murciano</button>
+  </a>
+  </div>
+
+  <div class="item">
+    <img src="../../Images_12X12/00X0-QKGN.png"></a>
+    <br>
+    <a href="12x12_Nourritures.html">
+      <button class="btn-page">Nourritures</button>
+  </a>
+  </div>
+
+  <div class="item">
+    <img src="../../Images_12X12/00X0-QKGN.png"></a>
+    <br>
+    <a href="12x12_Plantes.html">
+      <button class="btn-page">Plantes</button>
+  </a>
+  </div>
+
+  <div class="item">
+    <img src="../../Images_12X12/00X0-QKGN.png"></a>
+    <br>
+    <a href="12x12_Textes.html">
+      <button class="btn-page">Textes</button>
+  </a>
+  </div>
+
+  <div class="item">
+    <img src="../../Images_12X12/00X0-QKGN.png"></a>
+    <br>
+    <a href="12x12_Zen.html">
+      <button class="btn-page">Zen</button>
+  </a>
+  </div>
 
 </div>
 
-<script>
-    //donnees envoyees a liste commande.
-    function saveData() {
-            const checkboxes = document.querySelectorAll('input[name="Commande"]:checked');
-            const values = Array.from(checkboxes).map(checkbox => checkbox.value);
-            localStorage.setItem('commandeData', JSON.stringify(values));
-        }
-</script>
-
-<button onclick="saveData()">Enregistrer les données</button>
-
+<!--
 <footer>
     <p>&copy; 2024 Amelie Fletcher pour Grif & Graf. Tous droits réservés.</p>
 </footer>
+-->
 
-<script src="quantite.js"></script>
-<script src="Liste_Commande.html"></script>
 <script src="Recherche.js"></script>
 
 </body>

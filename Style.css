@@ -174,7 +174,7 @@ nav ul li:hover ul{
     width: 200px; /* Fixe la largeur à 200px */
     height: 200px; /* Fixe la hauteur à 200px */
     display: grid;
-    grid-template-columns: repeat(7, 1fr); /* 4 colonnes de largeur égale */
+    grid-template-columns: repeat(6, 1fr); /* 4 colonnes de largeur égale */
     gap: 35px; /* Espacement entre les items */
     padding: 60px; /* Espacement intérieur */
     box-sizing: border-box;
@@ -210,13 +210,13 @@ nav ul li:hover ul{
 }
 
 .plus{
-    background-color: #6247AA;
-    Border: #6247AA;
+    background-color: #AD336D;
+    Border: none;
 }
   
 .moins{
-    background-color: #D2B7E5;
-    border: #D2B7E5;
+    background-color: #F8997D;
+    border: none;
 }
 
 form{
@@ -232,5 +232,16 @@ input[type="submit"]{
     background-color: #ffacc5;
     color: #FFF;
     border: #ffacc5;
+}
+
+.btn-page{
+    background-color: #F8997D;
+    color: black;
+    text-align: center;
+    border: none;
+    box-sizing: border-box;
+    font-size: 15px;
+    padding: 5px;
+    margin: 5px;
 }
 
