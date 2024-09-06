@@ -116,19 +116,19 @@
         </header>
 
 <div class="grid-container">
-
+<!-- Fonctionnel. -->
     <div class="item" id="Hers_Crop_Animaux">
         <img src="../../Images_12X12/FOQY-9T75.png">
         <br>
         Hers Crop
         <br>
+        <div class="calcul">
         <button class="moins" onclick="decrementerNombre(this)">-</button><span class="nombre">0</span><button class="plus" onclick="incrementerNombre(this)">+</button>
-        <br>
+        </div>
         <label>
             <input type="checkbox" name="Commande" value="Hers Crop">
             Commander
         </label>
-        <br>
         <form action="https://customer-orders.grifgraf.ca/albena-hristova-hers-crop.html">
             <input type="submit" value="Lien Web">
         </form>
@@ -1420,12 +1420,13 @@
             localStorage.setItem('commandeData', JSON.stringify(values));
         }
 </script>
-
+<!--
 <button onclick="saveData()">Enregistrer les données</button>
 
 <footer>
     <p>&copy; 2024 Amelie Fletcher pour Grif & Graf. Tous droits réservés.</p>
 </footer>
+-->
 
 <script src="quantite.js"></script>
 <script src="Liste_Commande.html"></script>

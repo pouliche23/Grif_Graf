@@ -6,17 +6,19 @@
 
 }/*grande taille, format paysage*/
 
-
+/* Fonctionnel. */
 body{
-    background-color: beige; 
+    background-color: white; 
     font-family: 'Courier New', Courier, monospace; 
     font-size: 15px;
     }
 
+/* Fonctionnel. */
 .menu{
     box-sizing: border-box;
 }
 
+/* Fonctionnel. */
 .menu-item1{
     width:14.28%;
     height: 125px;
@@ -24,6 +26,7 @@ body{
     color: white;
 }
 
+/* Fonctionnel. */
 .menu-item2{
     width:14.28%;
     height: 125px;
@@ -31,6 +34,7 @@ body{
     color: white;
 }
 
+/* Fonctionnel. */
 .menu-item3{
     width:14.28%;
     height: 125px;
@@ -38,6 +42,7 @@ body{
     color: white;
 }
 
+/* Fonctionnel. */
 .menu-item4{
     width:14.28%;
     height: 125px;
@@ -45,6 +50,7 @@ body{
     color: white;
 }
 
+/* Fonctionnel. */
 .menu-item5{
     width:14.28%;
     height: 125px;
@@ -52,6 +58,7 @@ body{
     color: white;
 }
 
+/* Fonctionnel. */
 .menu-item6{
     width:14.28%;
     height: 125px;
@@ -59,6 +66,7 @@ body{
     color: white;
 }
 
+/* Fonctionnel. */
 .rechercher {
     flex-basis: 14.28%;
     height: 125px;
@@ -70,6 +78,7 @@ body{
     box-sizing: border-box; /* Inclut les padding dans la taille totale */
 }
 
+/* Fonctionnel. */
 .rechercher input[type="text"] {
     width: 60%; /* Le champ de texte prend 70% de la largeur du conteneur */
     height: 70%; /* Ajuste la hauteur pour rester proportionnelle */
@@ -80,7 +89,7 @@ body{
     color: black;
 }
 
-
+/* Fonctionnel. */
 .rechercher button.rechercher-btn {
     width: 40%; 
     height: 70%; 
@@ -92,24 +101,28 @@ body{
     font-size: 16px;
 }
 
+/* Fonctionnel. */
 .rechercher button.rechercher-btn:hover {
     background-color: white;
     color: #AD336D;
     border: 3px solid #AD336D; 
 } 
 
+/* Fonctionnel. */
 li{
     list-style:none !important; 
     font-size:22px;
     text-align: center;
     }
-           
+     
+/* Fonctionnel. */
 nav ul{
     display: flex; 
     padding:0;
     margin:0;
     }
-           
+
+/* Fonctionnel. */          
 nav ul li{
     line-height:100px;
     float:none;
@@ -119,6 +132,7 @@ nav ul li{
     list-style: none;
     }
 
+/* Fonctionnel. */
 nav ul li ul {
     display: none;
     position: absolute;
@@ -126,87 +140,105 @@ nav ul li ul {
     left: 0;
 }
 
+/* Fonctionnel. */
 nav ul li:hover ul, 
 nav ul li ul:hover {
     display: block;
     z-index: 99999;
 }
 
+/* Ne Fonctionne pas.*/
 nav ul li ul.sous-menu {
     display: none; /* Masque le sous-menu par défaut */
     position: absolute;
     top: 100%; /* Positionne le sous-menu juste en dessous du parent */
     left: 0; /* Aligne le sous-menu avec le bord gauche du parent */
-    width: 100%; /* S'assure que le sous-menu s'étend sur la largeur du parent */
     background-color: #F08E7B; /* Couleur de fond du sous-menu */
     z-index: 1000;
 }
 
+/* Ne Fonctionne pas.*/
 nav ul li:hover ul.sous-menu {
     display: block; /* Affiche le sous-menu lors du survol */
 }
 
-    
+/* Ne Fonctionne pas.*/   
 nav ul li ul.sous-menu li {
     width: 100%; /* Chaque élément du sous-menu occupe toute la largeur */
     text-align: left; /* Aligne le texte à gauche */
 }
 
+/* Fonctionnel. */
 nav ul li a{
     color:#FFF;
     text-decoration:none;
 }
-             
+  
+/* Fonctionnel. */
 li a:hover{
     border-bottom:5px #FFF solid;
 }
-            
+  
+/* Fonctionnel. */
 nav ul li:hover ul{ 
     list-style:none !important;
     z-index:99999;
     display:list-item !important;
     position:absolute;
-    margin-top:5px;
     margin-left:-10px;
 }
 
+/* Fonctionnel. */
 .grid-container {
-    width: 200px; /* Fixe la largeur à 200px */
-    height: 200px; /* Fixe la hauteur à 200px */
     display: grid;
-    grid-template-columns: repeat(6, 1fr); /* 4 colonnes de largeur égale */
+    grid-template-columns: repeat(7, 1fr); /* 4 colonnes de largeur égale */
     gap: 35px; /* Espacement entre les items */
     padding: 60px; /* Espacement intérieur */
     box-sizing: border-box;
+    
 }
+
+/* Ne fonctionne pas. */
 
 .item {
-    background-color: white; /* Couleur de fond des items */
-    border: 6px solid #AD336D; /* Bordure des items #6247AA*/
-    text-align: center; /* Centrer le texte */
+    background-color: white; 
+    border: 5px solid #AD336D; 
+    text-align: center; 
     color: black;
     font-size: 20px;
-    min-width: 200px; /* Fixe la largeur minimale à 200px */
-    min-height: 200px; 
+    min-width: 200px; 
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center; 
+    box-sizing: border-box; 
+    padding: 7px;
 }
 
-.item-btn{
-    width: 100%; /* Le bouton prend toute la largeur de la cellule */
-    height: 100%; /* Le bouton prend toute la hauteur de la cellule */
-    margin: 0; /* Supprime les marges par défaut */
-    padding: 40px; /* Supprime les padding du bouton */
-    box-sizing: border-box; /* Pour inclure la bordure et le padding dans la taille */
-    background: white;
-    border: none;
-}
-
-/*button{
-    background-color: #B185DB;
-    /*border: none;*/
-
+/* Fonctionnel. */
 .item img {
-    max-width: 100%; /* Assurer que l'image ne dépasse pas la taille de son conteneur */
-    height: auto; /* Garantir que l'image conserve ses proportions */
+    max-width: 100%; /* Assurer que l'image ne dépasse pas la taille de son conteneur. */
+    height: auto; /* Garantir que l'image conserve ses proportions. */
+}
+
+/* Fonctionnel. */
+.btn-page {
+    background-color: #F8997D; /* Couleur de fond */
+    color: black; /* Couleur du texte */
+    text-align: center; /* Centrage du texte */
+    border: none; /* Supprime la bordure */
+    box-sizing: border-box; /* Inclut le padding et la bordure dans la taille */
+    font-size: 15px; /* Taille de la police */
+    padding: 10px 20px; /* Ajustez le padding pour de l'espace autour du texte */
+    margin: 20px auto 0 auto; /* Ajoute une marge supérieure pour l'espacement */
+    display: block; /* Assurez-vous que le bouton est un élément en bloc */
+    align-self: center; /* Centre le bouton horizontalement si nécessaire */
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
 }
 
 .plus{
@@ -231,17 +263,19 @@ label{
 input[type="submit"]{
     background-color: #ffacc5;
     color: #FFF;
-    border: #ffacc5;
+    border: #F8997D;
 }
 
-.btn-page{
-    background-color: #F8997D;
+.no-underline {
+    display: inline-block; /* Nécessaire pour centrer l'élément avec text-align */
+    background-color: white;
     color: black;
     text-align: center;
-    border: none;
-    box-sizing: border-box;
-    font-size: 15px;
-    padding: 5px;
-    margin: 5px;
+    text-decoration: none;
+    font-size: 25px;
 }
 
+.calcul{
+    display: flex;
+    flex-direction: row;
+}
